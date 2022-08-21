@@ -1,0 +1,27 @@
+{
+  "name": "gilles-discord-bot",
+  "version": "1.0.0",
+  "description": "A Multipurpose Orna Discord Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/Bot.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LostKnight411/gilles-discord-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LostKnight411/gilles-discord-bot/issues"
+  },
+  "homepage": "https://github.com/LostKnight411/gilles-discord-bot#readme",
+  "dependencies": {
+    "@discordjs/rest": "^1.0.1",
+    "discord.js": "^14.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
