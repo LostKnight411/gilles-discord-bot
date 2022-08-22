@@ -1,10 +1,12 @@
 import { SlashCommandBuilder } from "discord.js";
 
-module.exports = {
-    data: new SlashCommandBuilder()
-        .setName("Help")
-        .setDescription("Lists available commands"),
-    async execute(interaction: any) {
-        await interaction.reply("");
-    }
-}
+const helpCommand = {
+  data: new SlashCommandBuilder()
+    .setName("help")
+    .setDescription("Lists available commands"),
+  async execute(interaction: any) {
+    await interaction.reply("");
+  },
+};
+
+export { helpCommand };

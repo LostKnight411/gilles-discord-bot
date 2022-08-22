@@ -4,8 +4,10 @@
   "description": "A Multipurpose Orna Discord Bot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node src/Bot.ts"
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "start": "node dist/deploy-commands && node dist/index",
+    "ci": "yarn build && yarn start"
   },
   "repository": {
     "type": "git",
